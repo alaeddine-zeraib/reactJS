@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // React.createElement("h1", null, "Hello from React"),
   <React.StrictMode>
     <App />
   </React.StrictMode>,
