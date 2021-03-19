@@ -1,6 +1,8 @@
+import Checkbox from "./componetns/Checkbox";
 import Lake from "./componetns/Lake";
 import LakeObjects from "./componetns/LakeObjects";
 import Skiresort from "./componetns/Skiresort";
+import Status from "./componetns/Status";
 import Welcome from "./componetns/Welcome";
 
 const lakesList = [
@@ -28,6 +30,10 @@ function App() {
       <LakeObjects lakes={lakeObjects} />
 
       <Skiresort season="summer" />
+
+      <Status />
+
+      <Checkbox />
     </div>
   );
 }
