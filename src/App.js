@@ -3,6 +3,8 @@ import Lake from "./componetns/Lake";
 import LakeObjects from "./componetns/LakeObjects";
 import Skiresort from "./componetns/Skiresort";
 import Status from "./componetns/Status";
+import UseEffect from "./componetns/UseEffect";
+import UseReducer from "./componetns/UseReducer";
 import Welcome from "./componetns/Welcome";
 
 const lakesList = [
@@ -34,6 +36,10 @@ function App() {
       <Status />
 
       <Checkbox />
+
+      <UseEffect />
+
+      <UseReducer />
     </div>
   );
 }
