@@ -1,4 +1,5 @@
 import Checkbox from "./componetns/Checkbox";
+import GithubApi from "./componetns/GithubApi";
 import Lake from "./componetns/Lake";
 import LakeObjects from "./componetns/LakeObjects";
 import Skiresort from "./componetns/Skiresort";
@@ -40,6 +41,8 @@ function App() {
       <UseEffect />
 
       <UseReducer />
+
+      <GithubApi login="alaeddine-zeraib"/>
     </div>
   );
 }
