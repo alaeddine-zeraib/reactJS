@@ -8,6 +8,8 @@ import Status from "./componetns/Status";
 import UseEffect from "./componetns/UseEffect";
 import UseReducer from "./componetns/UseReducer";
 import Welcome from "./componetns/Welcome";
+import {Routes, Route } from "react-router-dom";
+import { Home, About, Events, Contact, Whoops404, Services, History, Location } from "./componetns/Pages";
 
 const lakesList = [
   "Echo Lake",
@@ -25,6 +27,18 @@ const list = [1, 2, 3]
 function App() {
   return (
     <div className="App">
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />}>
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/history" element={<History />} />
+          <Route exact path="/location" element={<Location />} />
+        </Route>
+        <Route exact path="/events" element={<Events />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="*" element={<Whoops404 />} />
+      </Routes>
+
       <Welcome 
         library="React" 
         message="Have fun"
