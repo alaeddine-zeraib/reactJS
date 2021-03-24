@@ -2,6 +2,7 @@ import Checkbox from "./componetns/Checkbox";
 import GithubApi from "./componetns/GithubApi";
 import Lake from "./componetns/Lake";
 import LakeObjects from "./componetns/LakeObjects";
+import ReactTesting from "./componetns/ReactTesting";
 import Skiresort from "./componetns/Skiresort";
 import Status from "./componetns/Status";
 import UseEffect from "./componetns/UseEffect";
@@ -43,6 +44,8 @@ function App() {
       <UseReducer />
 
       <GithubApi login="alaeddine-zeraib"/>
+
+      <ReactTesting />
     </div>
   );
 }
